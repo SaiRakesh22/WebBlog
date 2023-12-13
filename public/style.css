@@ -1,0 +1,42 @@
+*{
+   color: white;
+}
+header{
+   font-size: larger;
+   padding-top: 20px;
+}
+.background{
+   background-image: url(https://makbeautyinstitute.com/wp-content/uploads/2011/01/plain-backgrounds-light-green-website-background-hd-wallpaper-plain-888779177.jpg);
+   background-size: 200% 200% ;
+   background-repeat: no-repeat;
+
+}
+.footer-padding {
+	padding-bottom: 60px;
+}
+footer{
+   font-size: larger;
+}
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh; /* This ensures the body takes at least the full height of the viewport */
+   margin: 0;
+}
+main {
+   flex: 1; /* This makes the main content area take up remaining vertical space */
+}
+input{
+   color: black;
+}
+.wrong{
+   color: red;
+}
+a{
+   text-decoration: none;
+}
+.truncated-content {
+   white-space: normal; /* Wrap text normally */
+   word-wrap: break-word; /* Wrap long words */
+   overflow-wrap: break-word; /* Wrap long words */
+}

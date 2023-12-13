@@ -1,0 +1,7 @@
+<%- include("partials/header.ejs") %>
+<h1 class="py-3">Verify to create!</h1>
+<form action="/compose" method = "POST" style="display: flex;">
+    <input type="password" class="form-control" id="floatingInput" name="password" placeholder="Enter Correct Password" style="width: 25%">
+    <button type="submit" class="btn btn-primary mx-2">Check</button>
+</form>
+<%- include("partials/footer.ejs") %>

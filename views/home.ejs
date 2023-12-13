@@ -1,0 +1,23 @@
+<%-include("partials/header.ejs")%>
+</div>
+<div class="container">
+    <h1>Home</h1>
+    <%= p1 %>
+    <% if(locals.blog){ %>
+        <% for(var i=0;i<blog.length;i++){ %>
+            <h1>
+                <%= blog[i]["title"] %>
+            </h1>
+            <p class="truncated-content">
+                <% const originalContent = blog[i]["content"] %>
+                <% const truncatedContent = originalContent.length > 100 ? originalContent.slice(0, 100) + " ..." : originalContent%>
+                <%= truncatedContent %>
+                <% if(originalContent.length > 100){ %>
+                    <a href = "<%= blog[i]["title"] %>">Read More</a>
+                <% } %>
+            </p>
+        <% } %>
+    <% }else{} %>
+    <hr style="margin-top: 26px;">
+</div>
+<%-include("partials/footer.ejs")%>

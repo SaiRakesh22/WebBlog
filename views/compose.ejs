@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+<h1>Compose Your Blog </h1>
+<form action="/blog" method="post">
+<div class="form-floating my-3 ">
+    <input type="text" class="form-control" id="floatingInput" name="title" placeholder="name@example.com">
+    <label for="floatingInput" class="text-dark">Title</label>
+  </div>
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Post" id="floatingTextarea2" name="content" style="height: 250px"></textarea>
+    <label for="floatingTextarea2" class="text-dark">Post</label>
+  </div>
+  
+    <button type="submit" class="btn btn-primary mt-3">Publish</button>
+  </form>
+<%- include("partials/footer.ejs") %>

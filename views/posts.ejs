@@ -1,0 +1,16 @@
+<%-include("partials/header.ejs")%>
+</div>
+<div class="container">
+    <% if(locals.blog){ %>
+        <% for(var i=0;i<blog.length;i++){ %>
+            <h1>
+                <%= blog[i]["title"] %>
+            </h1>
+            <p>
+                <%= blog[i]["content"] %>
+            </p>
+        <% } %>
+    <% }else{} %>
+    
+</div>
+<%-include("partials/footer.ejs")%>
